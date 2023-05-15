@@ -22,14 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Paint mPaintText = new Paint(Paint.UNDERLINE_TEXT_FLAG);
     private Bitmap mBitmap;
     private ImageView mImageView;
-    private Rect mRect = new Rect();
-    private Rect mBounds = new Rect();
 
-    private static final int OFFSET = 1;
-    //mengatur posisi objek
-    private int mOffset = OFFSET;
-    //mengatur warna agar berubah otomatis
-    private static final int MULTIPLIER = 100;
     private int mCount = 0;
 
     private int mColorRectangleTop;
@@ -48,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         mColorCircle = ResourcesCompat.getColor(getResources(),
                 R.color.white, null);
 
-
         mPaintText.setColor(ResourcesCompat.getColor(getResources(),
                 R.color.black, null));
+
         mPaintText.setTextSize(70);
 
         mImageView = findViewById(R.id.myImageView);
